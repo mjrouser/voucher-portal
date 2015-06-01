@@ -1,3 +1,34 @@
+html body {
+
+  font-family: "Proxima Nova", "proxima-nova", 
+                "Arial Narrow", 
+                Arial, 
+                sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "FF Good Headline Pro Condensed", "ff-good-headline-web-pro-con", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  font-variant: normal;
+  font-style: normal;
+  color: #404040;
+}
+
 .bold-text{
 	font-weight: bold;
+}
+
+.banner {
+	background-color: #dda037;
+	margin-bottom: 10px;
+       border: solid #dda037;
+       border-radius: 0px 0px 4px 4px;
+       height: 20em;
+}
+.seal{
+	margin: 0 auto;
+}
+
+.headline{
+	text-align: center;
 }
