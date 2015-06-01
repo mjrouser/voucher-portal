@@ -2,7 +2,7 @@
  <html class="no-js" lang="en-US">
    <head>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-
+        <link href="style.css" rel="stylesheet">
    </head>
    <body>
      <div class="container">
@@ -23,19 +23,37 @@
                   <th>Leased Vouchers</th>
                   <th>Subsidy Current Month</th>
                   <th>Retro/Others</th>
-                  <th>Reainder</th>
+                  <th>Remaining Vouchers</th>
                 </tr>
                 <tr>
-                  <td>John</td>
-                  <td>Doe</td>
+                  <td><input type="number" name="" value="" placeholder="9" id="leased"></td>
+                  <td><span class="currencyInput">$<input type="number" name="" value="" placeholder="9000" id="thisMonth"></span></td>
+                  <td><span class="currencyInput">$<input type="number" name="" value="" placeholder="0" id="others"></span></td>
+                  <td><input type="number" name="" value="" placeholder="" readonly id="remainder"></td>
                 </tr>
                 <tr>
-                  <td>Jane</td>
-                  <td>Doe</td>
+                  <td><input type="button" name="" value="Clear Data"></td>
+                  <td></td>
+                  <td></td>
+                  <td><input type="button" name="" value="Submit Data" id="submit"></td>
                 </tr>
             </table>
             <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                <div class="row">
+                	<div class="col-md-6">
+                		<ul>
+                			<li><span class="bold-text">Agency Name:</span> Alternative Vouchers</li>
+                			<li><span class="bold-text">Voucher Type:</span> PBC 02</li>
+                		</ul>
+                	</div>
+                	<div class="col-md-6">
+                		<ul>
+                			<li><span class="bold-text">Month:</span> July 2015</li>
+                			<li value="10" id="units"><span class="bold-text">Units Rented:</span> 10</li>
+                		</ul>
+                	</div>
+                </div>
+                <div class="row"></div> 
           </div>
         </div>
       </div>
@@ -99,6 +117,7 @@
   </div><!--/container-->
            <script src="http://code.jquery.com/jquery-2.1.4.min.js">    </script>
   	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">    </script>
+  	    <script src="formhandlers.js"></script>
       </body>
     </html>
 
