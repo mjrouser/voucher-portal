@@ -19,7 +19,78 @@ $('#clear').click(function(){
 });
 
 
+$('#submitTwo').click(function(){
+	var units = $('#unitsTwo').val();
+	var left = $('#leasedTwo').val()-units;
+	
+	if (left < 0){
+	       $('#remainderTwo').val(Math.abs(left));
+        } else {
+        	$('#remaindeTwor').val(0);
+        }
+});
+
+$('#clearTwo').click(function(){
+	$('#leasedTwo').val('');
+	$('#othersTwo').val('');
+	$('#thisMonthTwo').val('');
+	$('#remainderTwo').val('');
+});
 
 
-//-$("#")
+$('#submitThree').click(function(){
+	var units = $('#unitsThree').val();
+	var left = $('#leasedThree').val()-units;
+	
+	if (left < 0){
+	       $('#remainderThree').val(Math.abs(left));
+        } else {
+        	$('#remainderThree').val(0);
+        }
+});
+
+$('#clearThree').click(function(){
+	$('#leasedThree').val('');
+	$('#othersThree').val('');
+	$('#thisMonthThree').val('');
+	$('#remainderThree').val('');
+});
+
+$('#submitFour').click(function(){
+	var units = $('#unitsFour').val();
+	var left = $('#leasedFour').val()-units;
+	
+	if (left < 0){
+	       $('#remainderFour').val(Math.abs(left));
+        } else {
+        	$('#remainderFour').val(0);
+        }
+});
+
+$('#clearFour').click(function(){
+	$('#leasedFour').val('');
+	$('#othersFour').val('');
+	$('#thisMonthFour').val('');
+	$('#remainderFour').val('');
+});
+
+
+$('#submitFive').click(function(){
+	var units = $('#unitsFive').val();
+	var left = $('#leasedFive').val()-units;
+	
+	if (left < 0){
+	       $('#remainderFive').val(Math.abs(left));
+        } else {
+        	$('#remainderFive').val(0);
+        }
+});
+
+$('#clearFive').click(function(){
+	$('#leasedFive').val('');
+	$('#othersFive').val('');
+	$('#thisMonthFive').val('');
+	$('#remainderFive').val('');
+});
+
 
