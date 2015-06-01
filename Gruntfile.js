@@ -84,6 +84,7 @@ module.exports = function (grunt) {
           }
         }
       },
+      /*
       test: {
         options: {
           open: false,
@@ -98,6 +99,7 @@ module.exports = function (grunt) {
           }
         }
       },
+      */
       dist: {
         options: {
           base: '<%= config.dist %>',
@@ -135,6 +137,7 @@ module.exports = function (grunt) {
       ]
     },
 
+    /*
     // Mocha testing framework configuration options
     mocha: {
       all: {
@@ -144,7 +147,7 @@ module.exports = function (grunt) {
         }
       }
     },
-
+     */
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
@@ -308,7 +311,7 @@ module.exports = function (grunt) {
         dot: true,
         cwd: '<%= config.app %>/styles',
         dest: '.tmp/styles/',
-        src: '{,*/}*.css'
+        src: 'styles/{,*/}*.css'
       }
     },
 
@@ -317,9 +320,7 @@ module.exports = function (grunt) {
       server: [
         'copy:styles'
       ],
-      test: [
-        'copy:styles'
-      ],
+
       dist: [
         'copy:styles',
         'imagemin',
@@ -352,6 +353,7 @@ module.exports = function (grunt) {
     grunt.task.run([target ? ('serve:' + target) : 'serve']);
   });
 
+/*
   grunt.registerTask('test', function (target) {
     if (target !== 'watch') {
       grunt.task.run([
@@ -362,11 +364,11 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'connect:test',
-      'mocha'
+      'connect:test'//,
+      //'mocha'
     ]);
   });
-
+*/
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
@@ -384,7 +386,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
-    'test',
+    //'test',
     'build'
   ]);
 };
