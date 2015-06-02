@@ -26,7 +26,7 @@ $('#submitTwo').click(function(){
 	if (left < 0){
 	       $('#remainderTwo').val(Math.abs(left));
         } else {
-        	$('#remaindeTwor').val(0);
+        	$('#remainderTwo').val(0);
         }
 });
 
@@ -94,3 +94,11 @@ $('#clearFive').click(function(){
 });
 
 
+$('.closeall').click(function(){
+  $('.panel-collapse.in')
+    .collapse('hide');
+});
+$('.openall').click(function(){
+  $('.panel-collapse:not(".in")')
+    .collapse('show');
+});
