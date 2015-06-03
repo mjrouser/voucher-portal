@@ -1,13 +1,13 @@
 html body {
 
-  font-family: "Proxima Nova", "proxima-nova", 
+  font-family: "Open Sans Condensed",  
                 "Arial Narrow", 
                 Arial, 
                 sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "FF Good Headline Pro Condensed", "ff-good-headline-web-pro-con", "Arial Narrow", Arial, sans-serif;
+  font-family: "Oswald",  "Arial Narrow", Arial, sans-serif;
   font-weight: 500;
   font-variant: normal;
   font-style: normal;
@@ -34,4 +34,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .headline{
 	text-align: center;
+}
+
+.nav-tabs>li.active>a{
+	font-weight: bold;
+}
+.nav-tabs>li>a{
+	font-weight: bold;
+}
+
+.panel-group{
+	margin-top: 10px;
 }

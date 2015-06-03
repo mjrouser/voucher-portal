@@ -1,6 +1,7 @@
 'use strict';
 
-$('#submit').click(function(){
+
+var remaning = function (){
 	var units = $('#units').val();
 	var left = $('#leased').val()-units;
 	
@@ -9,13 +10,50 @@ $('#submit').click(function(){
         } else {
         	$('#remainder').val(0);
         }
+};
+
+
+$('#submit').click(function (){
+	var units = $('#units').val();
+	var left = $('#leased').val()-units;
+	
+	if (left < 0){
+	       $('#remainder').val(Math.abs(left));
+        } else {
+        	$('#remainder').val(0);
+        }
+       }
+);
+
+$('#load').click(function () {
+	$('#leased').val(4);
+	$('#thisMonth').val(2228);
+	$('#others').val(0);
+	$('#lastMonth').val(2228);
+	$('#12Month').val(2153);
+	$('#yearOver').val(2219);
+	$('#remainder').val(function (){
+	    var units = $('#units').val();
+	    var left = $('#leased').val()-units;
+	
+	    if (left < 0){
+	          $('#remainder').val(Math.abs(left));
+           } else {
+        	   $('#remainder').val(0);
+           }
+        });
 });
+
 
 $('#clear').click(function(){
 	$('#leased').val('');
-	$('#others').val('');
 	$('#thisMonth').val('');
+	$('#others').val('');
+	$('#lastMonth').val('');
+	$('#12Month').val('');
+	$('#yearOver').val('');
 	$('#remainder').val('');
+
 });
 
 

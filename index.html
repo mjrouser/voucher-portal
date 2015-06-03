@@ -3,12 +3,12 @@
    <head>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-        <script src="//use.typekit.net/fci1nnn.js"></script>
-        <script>try{Typekit.load();}catch(e){}</script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
    </head>
    <body>
      <div class="container">
-      
+
      <div class="banner">
        <div class="versions">
            <a href="index.html" title="">Ver. 1.0  |</a>
@@ -18,6 +18,14 @@
        <div class="page-header">   
            <h1 class="headline">DHCD Rental Assistance Program</h1> 
        </div>    
+     </div>
+
+     <div>
+       <ul class="nav nav-tabs">
+           <li role="presentation" class="active"><a href="#">Summary</a></li>
+           <li role="presentation"><a href="#">Voucher Detail</a></li>
+           <li role="presentation"><a href="#">Reports</a></li>
+       </ul>
      </div>
 
      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -42,39 +50,42 @@
                 </tr>
                 <tr>
                   <td>
-                          <input type="text" name="" value="" placeholder="4" id="leased">
+                          <input type="text" name="" value="" placeholder="" id="leased">
                   </td>
                   <td>
                           <input type="text" name="" value="" placeholder="" readonly id="remainder">
                   </td>
                   <td >
                           <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="2228" id="thisMonth">
+                          <input type="text" name="" value="" placeholder="" id="thisMonth">
                           </span>
                   </td>
                   <td >
                           <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="0" id="others">
+                          <input type="text" name="" value="" placeholder="" id="others">
                           </span>
                   </td>                   
                   <td > 
                           <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="2,228" id="lastMonth">
+                          <input type="text" name="" value="" placeholder="" id="lastMonth">
                           </span>
                   </td>
                   <td >
                           <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="2,153" id="yearOver">
+                          <input type="text" name="" value="" placeholder="" id="yearOver">
                           </span>
                   </td>
                   <td >                       
                           <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="2219" id="12Month">
+                          <input type="text" name="" value="" placeholder="" id="12Month">
                           </span>                         
                   </td>
                 </tr>
                 <tr>
-                  <td><input type="button" name="" value="Reset" id="clear"></td>
+                  <td>
+                         <input type="button" name="" value="Load Previous Data" id="load">
+                         <input type="button" name="" value="Reset" id="clear">
+                  </td>
                   <td></td>
                   <td></td>
                   <td></td>
