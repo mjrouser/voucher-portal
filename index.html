@@ -10,10 +10,13 @@
      <div class="container">
       
      <div class="banner">
-     
+       <div class="versions">
+           <a href="index.html" title="">Ver. 1.0  |</a>
+           <a href="indextwo.html" title="">Ver. 1.5</a>
+       </div>
      	<img src="images/commonwealth_seal_white.png" alt="responsive image" class="seal img-responsive">
        <div class="page-header">   
-           <h1 class="headline">State Rental Assistance Program</h1> 
+           <h1 class="headline">DHCD Rental Assistance Program</h1> 
        </div>    
      </div>
 
@@ -22,26 +25,59 @@
         <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Alternative Voucher
+          MRVP – Subprogram 1
             </a>
           </h4>
         </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <table class="table">
                <tr>
-                  <th>Leased Vouchers</th>
-                  <th>Subsidy Current Month</th>
-                  <th>Retro/Others</th>
-                  <th>Remaining Vouchers</th>
+                  <th>&nbsp;Leased Vouchers</th>
+                  <th>&nbsp;Remaining Vouchers</th>
+                  <th>&nbsp;Subsidy Current Month</th>
+                  <th>&nbsp;Adjusment</th>
+                  <th>&nbsp;Subsidy Last Month</th>
+                  <th>&nbsp;12-Mo Average</th>
+                  <th>&nbsp;Year over Year</th>                  
                 </tr>
                 <tr>
-                  <td><input type="text" name="" value="" placeholder="9" id="leased"></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="9000" id="thisMonth"></span></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="0" id="others"></span></td>
-                  <td><input type="text" name="" value="" placeholder="" readonly id="remainder"></td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="4" id="leased">
+                  </td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="" readonly id="remainder">
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="2228" id="thisMonth">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="0" id="others">
+                          </span>
+                  </td>                   
+                  <td > 
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="2,228" id="lastMonth">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="2,153" id="yearOver">
+                          </span>
+                  </td>
+                  <td >                       
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="2219" id="12Month">
+                          </span>                         
+                  </td>
                 </tr>
                 <tr>
                   <td><input type="button" name="" value="Reset" id="clear"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td><input type="button" name="" value="Save Data" id="submit"></td>
@@ -51,14 +87,14 @@
                 <div class="row">
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Agency Name:</span> Alternative Vouchers</li>
+                			
                 			<li><span class="bold-text">Voucher Type:</span> PBC 02</li>
                 		</ul>
                 	</div>
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Month:</span> July 2015</li>
-                			<li value="10" id="units"><span class="bold-text">Units Rented:</span> 10</li>
+                			
+                			<li value="5" id="units"><span class="bold-text">Units Rented:</span> 5</li>
                 		</ul>
                 	</div>
                 </div>
@@ -70,26 +106,59 @@
         <div class="panel-heading" role="tab" id="headingTwo">
           <h4 class="panel-title">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          811 Vouchers
+          MRVP – Subprogram 2
             </a>
           </h4>
         </div>
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <table class="table">
                <tr>
-                  <th>Leased Vouchers</th>
-                  <th>Subsidy Current Month</th>
-                  <th>Retro/Others</th>
-                  <th>Remaining Vouchers</th>
+                  <th>&nbsp;Leased Vouchers</th>
+                  <th>&nbsp;Remaining Vouchers</th>
+                  <th>&nbsp;Subsidy Current Month</th>
+                  <th>&nbsp;Adjusment</th>
+                  <th>&nbsp;Subsidy Last Month</th>
+                  <th>&nbsp;12-Mo Average</th>
+                  <th>&nbsp;Year over Year</th>
                 </tr>
                 <tr>
-                  <td><input type="text" name="" value="" placeholder="9" id="leasedTwo"></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="9000" id="thisMonthTwo"></span></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="0" id="others"></span></td>
-                  <td><input type="text" name="" value="" placeholder="" readonly id="remainderTwo"></td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="2" id="leasedTwo">
+                  </td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="" readonly id="remainderTwo">
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="1,700 " id="thisMonthTwo">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="100" id="othersTwo">
+                          </span>
+                  </td>                   
+                  <td > 
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="1,700" id="lastMonthTwo">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="1,695" id="yearOverTwo">
+                          </span>
+                  </td>
+                  <td >                       
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="1,513" id="12MonthTwo">
+                          </span>                         
+                  </td>
                 </tr>
                 <tr>
                   <td><input type="button" name="" value="Reset" id="clearTwo"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td><input type="button" name="" value="Save Data" id="submitTwo"></td>
@@ -99,14 +168,12 @@
                 <div class="row">
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Agency Name:</span> 811 Vouchers</li>
                 			<li><span class="bold-text">Voucher Type:</span> PBC 02</li>
                 		</ul>
                 	</div>
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Month:</span> July 2015</li>
-                			<li value="10" id="unitsTwo"><span class="bold-text">Units Rented:</span> 10</li>
+                			<li value="2" id="unitsTwo"><span class="bold-text">Units Rented:</span> 2</li>
                 		</ul>
                 	</div>
                 </div>
@@ -118,26 +185,59 @@
         <div class="panel-heading" role="tab" id="headingThree">
           <h4 class="panel-title">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          New Lease PB FY15
+          MRVP – Subprogram 3
             </a>
           </h4>
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
             <table class="table">
                <tr>
-                  <th>Leased Vouchers</th>
-                  <th>Subsidy Current Month</th>
-                  <th>Retro/Others</th>
-                  <th>Remaining Vouchers</th>
+                  <th>&nbsp;Leased Vouchers</th>
+                  <th>&nbsp;Remaining Vouchers</th>
+                  <th>&nbsp;Subsidy Current Month</th>
+                  <th>&nbsp;Adjusment</th>
+                  <th>&nbsp;Subsidy Last Month</th>
+                  <th>&nbsp;12-Mo Average</th>
+                  <th>&nbsp;Year over Year</th>
                 </tr>
                 <tr>
-                  <td><input type="text" name="" value="" placeholder="9" id="leasedThree"></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="9000" id="thisMonthThree"></span></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="0" id="othersThree"></span></td>
-                  <td><input type="text" name="" value="" placeholder="" readonly id="remainderThree"></td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="3" id="leasedThree">
+                  </td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="" readonly id="remainderThree">
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="1,296" id="thisMonthThree">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="0" id="othersThree">
+                          </span>
+                  </td>                   
+                  <td > 
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="1,296" id="lastMonthThree">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="1,260" id="yearOverThree">
+                          </span>
+                  </td>
+                  <td >                       
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="1,362" id="12MonthThree">
+                          </span>                         
+                  </td>
                 </tr>
                 <tr>
                   <td><input type="button" name="" value="Reset" id="clearThree"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td><input type="button" name="" value="Save Data" id="submitThree"></td>
@@ -147,14 +247,12 @@
                 <div class="row">
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Agency Name:</span> New Lease PB FY15</li>
                 			<li><span class="bold-text">Voucher Type:</span> PBC 02</li>
                 		</ul>
                 	</div>
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Month:</span> July 2015</li>
-                			<li value="10" id="unitsThree"><span class="bold-text">Units Rented:</span> 10</li>
+                			<li value="5" id="unitsThree"><span class="bold-text">Units Rented:</span> 5</li>
                 		</ul>
                 	</div>
                 </div>
@@ -166,26 +264,58 @@
         <div class="panel-heading" role="tab" id="headingFour">
           <h4 class="panel-title">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          New Project Based: Gatehouse
+          DMH
             </a>
           </h4>
         </div>
         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
             <table class="table">
                <tr>
-                  <th>Leased Vouchers</th>
-                  <th>Subsidy Current Month</th>
-                  <th>Retro/Others</th>
-                  <th>Remaining Vouchers</th>
+                  <th>&nbsp;Leased Vouchers</th>
+                  <th>&nbsp;Remaining Vouchers</th>
+                  <th>&nbsp;Subsidy Current Month</th>
+                  <th>&nbsp;Adjusment</th>
+                  <th>&nbsp;Subsidy Last Month</th>
+                  <th>&nbsp;12-Mo Average</th>
+                  <th>&nbsp;Year over Year</th>
                 </tr>
                 <tr>
-                  <td><input type="text" name="" value="" placeholder="9" id="leasedFour"></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="9000" id="thisMonthFour"></span></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="0" id="othersFour"></span></td>
-                  <td><input type="text" name="" value="" placeholder="" readonly id="remainderFour"></td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="6" id="leasedFour">
+                  </td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="" readonly id="remainderFour">
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="3,880" id="thisMonthFour">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="0" id="othersFour">
+                          </span>
+                  </td>                   
+                  <td > 
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="3,880" id="lastMonthFour">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="4,105" id="yearOverFour">
+                          </span>
+                  </td>
+                  <td >                       
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="3,798" id="12MonthFour">
+                          </span>                         
+                  </td>
                 </tr>
-                <tr>
                   <td><input type="button" name="" value="Reset" id="clearFour"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td><input type="button" name="" value="Save Data" id="submitFour"></td>
@@ -195,14 +325,12 @@
                 <div class="row">
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Agency Name:</span> New Project Based: Gatehouse</li>
                 			<li><span class="bold-text">Voucher Type:</span> PBC 02</li>
                 		</ul>
                 	</div>
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Month:</span> July 2015</li>
-                			<li value="10" id="unitsFour"><span class="bold-text">Units Rented:</span> 10</li>
+                			<li value="6" id="unitsFour"><span class="bold-text">Units Rented:</span> 6</li>
                 		</ul>
                 	</div>
                 </div>
@@ -214,26 +342,59 @@
         <div class="panel-heading" role="tab" id="headingFive">
           <h4 class="panel-title">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          New PB FY14 Walnut Ave - Jamaica Plain
+          AHVP
             </a>
           </h4>
         </div>
         <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
             <table class="table">
                <tr>
-                  <th>Leased Vouchers</th>
-                  <th>Subsidy Current Month</th>
-                  <th>Retro/Others</th>
-                  <th>Remaining Vouchers</th>
+                  <th>&nbsp;Leased Vouchers</th>
+                  <th>&nbsp;Remaining Vouchers</th>
+                  <th>&nbsp;Subsidy Current Month</th>
+                  <th>&nbsp;Adjusment</th>
+                  <th>&nbsp;Subsidy Last Month</th>
+                  <th>&nbsp;12-Mo Average</th>
+                  <th>&nbsp;Year over Year</th>
                 </tr>
                 <tr>
-                  <td><input type="text" name="" value="" placeholder="9" id="leasedFive"></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="9000" id="thisMonthFive"></span></td>
-                  <td><span class="currencyInput">$<input type="text" name="" value="" placeholder="0" id="othersFive"></span></td>
-                  <td><input type="text" name="" value="" placeholder="" readonly id="remainderFive"></td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="4" id="leasedFive">
+                  </td>
+                  <td>
+                          <input type="text" name="" value="" placeholder="" readonly id="remainderFive">
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="2228" id="thisMonthFive">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="0" id="othersFive">
+                          </span>
+                  </td>                   
+                  <td > 
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="2,228" id="lastMonthFive">
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="2,153" id="yearOverFive">
+                          </span>
+                  </td>
+                  <td >                       
+                          <span class="currencyInput">$
+                          <input type="text" name="" value="" placeholder="2219" id="12MonthFive">
+                          </span>                         
+                  </td>
                 </tr>
                 <tr>
-                  <td><input type="button" name="" value="Reset" id="cleaFiver"></td>
+                  <td><input type="button" name="" value="Reset" id="clearFive"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td><input type="button" name="" value="Save Data" id="submitFive"></td>
@@ -243,13 +404,11 @@
                 <div class="row">
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Agency Name:</span> New PB FY14 Walnut Ave - Jamaica Plain</li>
                 			<li><span class="bold-text">Voucher Type:</span> PBC 02</li>
                 		</ul>
                 	</div>
                 	<div class="col-md-6">
                 		<ul>
-                			<li><span class="bold-text">Month:</span> July 2015</li>
                 			<li value="10" id="unitsFive"><span class="bold-text">Units Rented:</span> 10</li>
                 		</ul>
                 	</div>
