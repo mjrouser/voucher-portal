@@ -18,12 +18,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+.nav{
+
+}
+.navbar{
+	background-color: #404040;
+	border: none;
+	border-radius: 0px;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.navbar-right {
+  margin-right: 0px;
+ }
+
 .banner {
 	background-color: #dda037;
 	margin-bottom: 10px;
        border: solid #dda037;
        border-radius: 0px 0px 4px 4px;
-       height: 20em;
+       height: 5em;
 }
 .versions{
 	position: absolute;
