@@ -43,71 +43,79 @@
            <h2 class="headline">State Voucher Management System: Contracts and Reconciliation</h2> 
            
      </div>
+     <div>
+       <h4>Cambridge Housing Authority</h4>
+     </div>
 
      <div>
        <ul class="nav nav-tabs">
            <li role="presentation" class="active"><a href="#">Summary</a></li>
-           <li role="presentation"><a href="#">Voucher Detail</a></li>
            <li role="presentation"><a href="#">Reports</a></li>
        </ul>
      </div>
+     
 
      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          MRVP – Subprogram 1
+          MOB 01 – Mobility
             </a>
           </h4>
         </div>
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <table class="table">
                <tr>
+                  <th>&nbsp;#Issued</th>
                   <th>&nbsp;#Leased</th>
-                  <th>&nbsp;#Unused</th>
-                  <th>&nbsp;Subsidy Current Month</th>
-                  <th>&nbsp;Adjustment</th>
+                  <th>&nbsp;#Remainder</th>
                   <th>&nbsp;Subsidy Last Month</th>
+                  <th>&nbsp;Adjustment</th>
+                  <th>&nbsp;Subsidy Current Month</th>
                   <th>&nbsp;12-Mo Average</th>
                   <th>&nbsp;Year over Year</th>                  
                 </tr>
                 <tr>
                   <td>
-                          <input type="text" name="" value="" placeholder="" id="leased">
+                          <div id="issued" ></div>
                   </td>
                   <td>
-                          <input type="text" name="" value="" placeholder="" readonly id="remainder">
+                          <input type="text" name="" value="" id="leased" ></div>
                   </td>
+                  <td>
+                          <div id="remainder"></div>
+                  </td>
+                  <td > 
+                          <span class="currencyInput">$
+                            <div class="prefixer" id="lastMonth"</div>
+                          </span>
+                  </td>
+                  <td >
+                          <span class="currencyInput">$<input type="text" name="" value="" placeholder="" id="others"></span>
+                  </td> 
                   <td >
                           <span class="currencyInput">$
                           <input type="text" name="" value="" placeholder="" id="thisMonth">
                           </span>
-                  </td>
+                  </td>                  
                   <td >
                           <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="" id="others">
-                          </span>
-                  </td>                   
-                  <td > 
-                          <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="" readonly id="lastMonth">
-                          </span>
-                  </td>
-                  <td >
-                          <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="" readonly id="yearOver">
+                            <div class="prefixer" id="yearOver"></div>
                           </span>
                   </td>
                   <td >                       
                           <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="" readonly id="12Month">
+                          <div class="prefixer" id="12Month"></div>
                           </span>                         
                   </td>
                 </tr>
                 <tr>
                   <td>
                          <input type="button" name="" value="Load Previous Data" id="load">
+                         
+                  </td>
+                  <td>
                          <input type="button" name="" value="Reset" id="clear">
                   </td>
                   <td></td>
@@ -121,16 +129,10 @@
             <div class="panel-body">
                 <div class="row">
                 	<div class="col-md-6">
-                		<ul>
-                			
-                			<li><span class="bold-text">Voucher Type:</span> PBC 02</li>
-                		</ul>
+                		
                 	</div>
                 	<div class="col-md-6">
-                		<ul>
-                			
-                			<li value="5" id="units"><span class="bold-text">Units Rented:</span> 5</li>
-                		</ul>
+                		<textarea rows="5" cols="60" name="" placeholder="Enter circumstances for any ajdustments to previous month's funds projection" id="details"></textarea>
                 	</div>
                 </div>
                  

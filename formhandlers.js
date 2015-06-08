@@ -1,6 +1,6 @@
 'use strict';
 
-
+/*
 var remaning = function (){
 	var units = $('#units').val();
 	var left = $('#leased').val()-units;
@@ -11,37 +11,22 @@ var remaning = function (){
         	$('#remainder').val(0);
         }
 };
-
+*/
 
 $('#submit').click(function (){
-	var units = $('#units').val();
-	var left = $('#leased').val()-units;
-	
-	if (left < 0){
-	       $('#remainder').val(Math.abs(left));
-        } else {
-        	$('#remainder').val(0);
-        }
+	$('#remainder').html(2);
        }
 );
 
 $('#load').click(function () {
-	$('#leased').val(4);
+	$('#issued').html(28);
+	$('#leased').val(26);
 	$('#thisMonth').val(2228);
 	$('#others').val(0);
-	$('#lastMonth').val(2228);
-	$('#12Month').val(2153);
-	$('#yearOver').val(2219);
-	$('#remainder').val(function (){
-	    var units = $('#units').val();
-	    var left = $('#leased').val()-units;
-	
-	    if (left < 0){
-	          $('#remainder').val(Math.abs(left));
-           } else {
-        	   $('#remainder').val(0);
-           }
-        });
+	$('#lastMonth').html(2228);
+	$('#12Month').html(2153);
+	$('#yearOver').html(2219);
+
 });
 
 
@@ -49,10 +34,10 @@ $('#clear').click(function(){
 	$('#leased').val('');
 	$('#thisMonth').val('');
 	$('#others').val('');
-	$('#lastMonth').val('');
-	$('#12Month').val('');
-	$('#yearOver').val('');
-	$('#remainder').val('');
+	$('#lastMonth').html('');
+	$('#12Month').html('');
+	$('#yearOver').html('');
+	$('#remainder').html('');
 
 });
 
