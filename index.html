@@ -64,6 +64,7 @@
           </h4>
         </div>
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+           <form role="form" data-toggle="validator">
             <table class="table">
                <tr>
                   <th>&nbsp;#Issued</th>
@@ -79,31 +80,49 @@
                   <td>
                           <div id="issued" ></div>
                   </td>
-                  <td class="leased-column">
-                          <input type="text" name="" value="" id="leased"  class="leased"></div>
+                  <td class="leased-column auto-col">
+                        <div class="form-group">
+                            <label class="sr-only" for="leased" class="control-label">Units Leased</label>
+                                <input type="text"  id="leased"  class="leased form-control" required> 
+                                <div class="help-block with-errors"></div>                           
+                        </div>
                   </td>
-                  <td>
+                  <td class="auto-col">
                           <div id="remainder"></div>
                   </td>
                   <td > 
                           <span class="currencyInput">$
-                            <div class="prefixer" id="lastMonth"</div>
+                            <div class="prefixer" id="lastMonth"></div>
                           </span>
                   </td>
-                  <td >
-                          <span class="currencyInput">$<input type="text" name="" value="" placeholder="" id="others"></span>
+                  <td class="input-col">
+                        <div class="form-group">
+                            <label class="sr-only" for="others" class="control-label">Others</label>
+                               <div class="input-group">
+                                  <div class="input-group-addon">$</div>
+                                     <input type="text" id="others" class="form-control" required>
+                                     <div class="help-block with-errors"></div>
+                                  </div>
+                               </div>
+                        </div>
                   </td> 
-                  <td >
-                          <span class="currencyInput">$
-                          <input type="text" name="" value="" placeholder="" id="thisMonth">
-                          </span>
+                  <td class="input-col">
+                        <div class="form-group">
+                           <label class="sr-only" for="thisMonth" class="control-label">Subsidy current month</label>
+                               <div class="input-group">
+                                  <div class="input-group-addon">$</div>
+                                     <input type="text" id="thisMonth" class="form-control" required>
+                                     <div class="help-block with-errors"></div>                        
+                                  </div>
+                               </div>
+                        </div>
                   </td>                  
-                  <td >
+                  <td class="auto-col">
                           <span class="currencyInput">$
                             <div class="prefixer" id="yearOver"></div>
                           </span>
                   </td>
-                  <td >                       
+                  <td class="auto-col">                       
                           <span class="currencyInput">$
                           <div class="prefixer" id="12Month"></div>
                           </span>                         
@@ -111,11 +130,15 @@
                 </tr>
                 
             </table>
+           
             <div class="panel-body">
                 <div class="row">
                 	
                 	<div class="col-md-6">
-                		<textarea rows="5" cols="60" name="" placeholder="Enter circumstances for any ajdustments to previous month's funds projection" id="details"></textarea>
+                     <div class="form-group">
+                          <label class="sr-only" for="details">Explanation of others</label>
+                		         <textarea rows="5" cols="60" placeholder="Enter circumstances for any ajdustments to previous month's funds projection" id="details"></textarea>
+                     </div>
                 	</div>
                   <div class="col-md-6">
                     <input type="button" name="" value="Load Previous Data" id="load">
@@ -125,7 +148,7 @@
                      <input type="button" name="" value="Save Data" id="submit">
                   </div>
                 </div>
-                 
+            </form>   
           </div>
         </div>
       </div>
@@ -451,8 +474,8 @@
   </div><!--/container-->
            <script src="http://code.jquery.com/jquery-2.1.4.min.js">    </script>
   	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">    </script>
-        <script src="validator.min.js"></script>
   	    <script src="formhandlers.js"></script>
+        <script src="validator.min.js"></script>
       </body>
     </html>
 

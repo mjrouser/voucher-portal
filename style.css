@@ -58,7 +58,11 @@ h1, h2, h3, h4, h5, h6 {
 .panel-group{
 	margin-top: 10px;
 }
-
+.panel-body{
+	border-top-color: #DDDDDD;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
 .prefixer{
 	display: inline;
 }
@@ -68,4 +72,13 @@ textarea {
 .leased,
 .leased-column{
 	max-width: 4em;
+}
+.input-col{
+	max-width: 10em;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	vertical-align: middle;
+}
+.form-group{
+	margin: 0;
 }
